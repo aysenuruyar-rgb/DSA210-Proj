@@ -88,6 +88,8 @@ Notebook: `notebook/03_hypothesis_tests.ipynb`
 - **Water systems are complex**  
   Dam levels depend on long-term accumulation, not daily rain
 
+---
+
 ## Project Structure
 
 ```
