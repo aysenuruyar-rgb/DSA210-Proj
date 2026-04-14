@@ -104,6 +104,7 @@ DSA210-Proj/
 │ ├── 01_data_preparation.ipynb
 │ ├── 02_eda.ipynb
 │ ├── 03_hypothesis_tests.ipynb
+│ ├── feature_engineering.ipynb
 │ └── modeling.ipynb
 │
 ├── Project Proposal.pdf
