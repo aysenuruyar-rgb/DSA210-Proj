@@ -90,7 +90,7 @@ Notebook: `notebook/03_hypothesis_tests.ipynb`
 
 ## Project Structure
 
-
+```
 DSA210-Proj/
 │
 ├── data/
@@ -108,4 +108,4 @@ DSA210-Proj/
 │
 ├── Project Proposal.pdf
 └── README.md
-
+```
