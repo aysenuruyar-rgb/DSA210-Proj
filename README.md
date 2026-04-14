@@ -88,3 +88,24 @@ Notebook: `notebook/03_hypothesis_tests.ipynb`
 - **Water systems are complex**  
   Dam levels depend on long-term accumulation, not daily rain
 
+## Project Structure
+
+
+DSA210-Proj/
+│
+├── data/
+│ ├── raw/ # Original collected datasets
+│ └── processed/ # Cleaned and merged dataset
+│ └── final_dataset.csv
+│
+├── figures/ # Generated plots and visualizations
+│
+├── notebook/ # Jupyter notebooks for analysis
+│ ├── 01_data_preparation.ipynb
+│ ├── 02_eda.ipynb
+│ ├── 03_hypothesis_tests.ipynb
+│ └── modeling.ipynb
+│
+├── Project Proposal.pdf
+└── README.md
+
