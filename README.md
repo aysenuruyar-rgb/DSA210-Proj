@@ -28,7 +28,9 @@ This project integrates two main datasets covering **2000s–present**, enriched
 **Data Organization:**
 
 - Raw data: `data/raw/`  
-- Processed data: `data/processed/final_dataset.csv`  
+- Processed data:
+  - data/processed/final_dataset.csv
+  - data/processed/featured_dataset.csv
 
 ---
 
@@ -145,7 +147,6 @@ DSA210-Proj/
 ├── data/
 │ ├── raw/ # Original collected datasets
 │ └── processed/ # Cleaned and merged dataset
-│ └── final_dataset.csv
 │
 ├── figures/ # Generated plots and visualizations
 │
