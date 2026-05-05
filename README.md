@@ -74,6 +74,53 @@ Notebook: `notebook/03_hypothesis_tests.ipynb`
 
 ---
 
+### 4. Feature Engineering
+
+To improve model performance, additional features were created:
+
+- Lag variables (previous dam levels and weather conditions)
+- Rolling averages (3-month trends)
+- Combined precipitation features (rain + snow)
+- Seasonal encoding using sine and cosine transformations
+- Binary rain indicator (`is_rainy`)
+
+The processed dataset is saved as:
+
+- `featured_dataset.csv`
+
+Notebook: `notebook/04_feature_engineering.ipynb`
+
+---
+
+### 5. Machine Learning Modeling
+
+A regression-based machine learning approach was applied to predict dam occupancy.
+
+- **Models used:**
+  - Linear Regression
+  - Random Forest Regressor
+
+- **Features included:**
+  - Weather variables
+  - Lag features
+  - Rolling averages
+  - Seasonal features
+
+- **Evaluation metrics:**
+  - MAE (Mean Absolute Error)
+  - R² (Coefficient of Determination)
+  
+**Results:**
+
+- Linear regression achieved strong performance, largely driven by lagged dam variables  
+- Random Forest captured non-linear relationships between variables  
+- Temporal features (lags and seasonality) were the most important predictors  
+- Models confirm that short-term weather variables alone are insufficient  
+
+Notebook: `notebook/05_modeling.ipynb`
+
+---
+
 ## Key Findings
 
 - **Rainfall alone is not sufficient**  
@@ -106,8 +153,8 @@ DSA210-Proj/
 │ ├── 01_data_preparation.ipynb
 │ ├── 02_eda.ipynb
 │ ├── 03_hypothesis_tests.ipynb
-│ ├── feature_engineering.ipynb
-│ └── modeling.ipynb
+│ ├── 04_feature_engineering.ipynb
+│ └── 05_modeling.ipynb
 │
 ├── Project Proposal.pdf
 └── README.md
