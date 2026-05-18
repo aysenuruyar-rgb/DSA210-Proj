@@ -166,3 +166,11 @@ DSA210-Proj/
 ├── Project Proposal.pdf
 └── README.md
 ```
+## AI Disclosure
+
+Large Language Models (LLMs) (specifically ChatGPT) were used during parts of the project for:
+- improving documentation
+- refining report writing
+- debugging and code explanations
+
+All analysis, implementation, interpretation, and final decisions were completed and verified by the author.
