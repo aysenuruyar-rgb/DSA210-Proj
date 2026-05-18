@@ -1,4 +1,10 @@
 # Aysenur Uyar - DSA210 Project
+## Project Goal
+
+Water sustainability and resource management are becoming some of the most critical global challenges of both today and the near future. Increasing population growth, climate change, and irregular precipitation patterns make understanding water systems more important than ever.
+
+This project investigates whether weather conditions — particularly rainfall and snowfall — are sufficient to explain Istanbul dam occupancy levels. Using historical reservoir and weather datasets, the project applies exploratory data analysis, statistical hypothesis testing, feature engineering, and machine learning methods to better understand the complex factors affecting water availability and reservoir behavior.
+
 ## Data Sources
 
 This project integrates two main datasets covering **2000s–present**, enriched and aligned temporally:
@@ -88,7 +94,7 @@ To improve model performance, additional features were created:
 
 The processed dataset is saved as:
 
-- `featured_dataset.csv`
+- `data/processed/featured_dataset.csv`
 
 Notebook: `notebook/04_feature_engineering.ipynb`
 
@@ -114,7 +120,7 @@ A regression-based machine learning approach was applied to predict dam occupanc
   
 **Results:**
 
-- Linear regression achieved strong performance, largely driven by lagged dam variables  
+- Linear regression performance improved significantly after adding lag and seasonal features
 - Random Forest captured non-linear relationships between variables  
 - Temporal features (lags and seasonality) were the most important predictors  
 - Models confirm that short-term weather variables alone are insufficient  
