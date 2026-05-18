@@ -29,6 +29,8 @@ This project integrates two main datasets covering **2000s–present**, enriched
   - Temperature (°C)  
 - **Collection Method:** Python API requests
 
+---
+
 **Data Enrichment:**
 
 - After merging the datasets by date, additional temporal and seasonal features were created to better capture long-term reservoir behavior. These include lag variables, rolling averages, seasonal encodings, and combined precipitation indicators.
@@ -80,6 +82,9 @@ The following hypotheses were evaluated:
 | **H1** | Rainfall affects dam occupancy | **Not significant** (p ≈ 0.415) |
 | **H2** | Weather variables explain dam levels | **Very weak** (R² ≈ 0.02) |
 | **H3** | Seasonality affects dam occupancy | **Confirmed** (p < 0.001) |
+| **H4** | Rainy seasons have higher occupancy levels | **Confirmed** (p < 0.001) |
+
+The hypothesis testing results suggest that short-term daily rainfall alone is not sufficient to explain dam occupancy levels. However, seasonal and long-term patterns appear to play a much stronger role.
 
 Notebook: `notebook/03_hypothesis_tests.ipynb`
 
@@ -124,7 +129,7 @@ Since the dataset is time-series based, chronological train-test splitting was u
 
 ### Model Performance Summary
 
-| Model | Features | Performance Metric | R² |
+| Model | Features | Metric | R² |
 |---|---|---|---|
 | Linear Regression | Weather + lag + rolling + seasonal features | MAE = 2.99 | 0.955 |
 | Random Forest Regressor | All engineered features | MSE = 25.18 | 0.937 |
@@ -133,7 +138,7 @@ The machine learning results demonstrate that engineered temporal features such 
 
 Both models achieved high R² values, indicating that historical occupancy patterns and seasonal dynamics are strong predictors of reservoir levels. The findings further support the earlier hypothesis testing results, which showed that short-term rainfall alone is insufficient to fully explain dam occupancy behavior.
 
-The feature importance analysis also revealed that lagged occupancy variables and seasonal patterns were among the strongest predictors, emphasizing the importance of long-term and cumulative environmental processes in reservoir systems.
+The results show that engineered temporal features significantly improve prediction performance. Lagged occupancy levels and seasonal patterns were among the strongest predictors, while short-term daily weather variables had relatively weak predictive power.
 
 Notebook: `notebook/05_modeling.ipynb`
 
@@ -148,10 +153,12 @@ Notebook: `notebook/05_modeling.ipynb`
   Very low explanatory power  
 
 - **Seasonality is strong**  
-  Dam levels vary significantly across seasons  
+  Dam levels vary significantly across seasons
+  Rainy seasons generally have significantly higher occupancy levels than non-rainy seasons
 
 - **Water systems are complex**  
   Dam levels depend on long-term accumulation, not daily rain
+
 
 ---
 
