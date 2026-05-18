@@ -177,7 +177,7 @@ DSA210-Proj/
 │ ├── 01_data_preparation.ipynb
 │ ├── 02_eda.ipynb
 │ ├── 03_hypothesis_testing_cleaned_version.ipynb
-│ ├── 03_hypothesis_tests.ipynb
+│ ├── 03_hypothesis_tests_old_version.ipynb
 │ ├── 04_feature_engineering.ipynb
 │ └── 05_ML_methods.ipynb
 │
