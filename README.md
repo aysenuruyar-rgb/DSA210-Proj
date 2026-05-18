@@ -3,7 +3,7 @@
 
 Water sustainability and resource management are becoming some of the most critical global challenges of both today and the near future. Increasing population growth, climate change, and irregular precipitation patterns make understanding water systems more important than ever.
 
-This project investigates whether weather conditions — particularly rainfall and snowfall — are sufficient to explain Istanbul dam occupancy levels. Using historical reservoir and weather datasets, the project applies exploratory data analysis, statistical hypothesis testing, feature engineering, and machine learning methods to better understand the complex factors affecting water availability and reservoir behavior.
+This project investigates whether weather conditions, particularly rainfall and snowfall, are sufficient to explain Istanbul dam occupancy levels. Using historical reservoir and weather datasets, the project applies exploratory data analysis, statistical hypothesis testing, feature engineering, and machine learning methods to better understand the complex factors affecting water availability and reservoir behavior.
 
 ## Data Sources
 
