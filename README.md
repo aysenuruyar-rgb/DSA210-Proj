@@ -103,6 +103,7 @@ Notebook: `notebook/04_feature_engineering.ipynb`
 ### 5. Machine Learning Modeling
 
 A regression-based machine learning approach was applied to predict Istanbul dam occupancy levels using engineered temporal and weather-related features.
+Since the dataset is time-series based, chronological train-test splitting was used to avoid data leakage.
 
 - **Models used:**
   - Linear Regression
