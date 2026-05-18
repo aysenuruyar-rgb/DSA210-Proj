@@ -27,8 +27,11 @@ This project integrates two main datasets covering **2000s–present**, enriched
   - Rainfall (mm)
   - Snowfall (cm)
   - Temperature (°C)  
-- **Collection Method:** Python API requests  
+- **Collection Method:** Python API requests
 
+**Data Enrichment:**
+
+- After merging the datasets by date, additional temporal and seasonal features were created to better capture long-term reservoir behavior. These include lag variables, rolling averages, seasonal encodings, and combined precipitation indicators.
 ---
 
 **Data Organization:**
