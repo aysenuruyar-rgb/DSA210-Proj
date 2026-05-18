@@ -166,12 +166,15 @@ DSA210-Proj/
 ├── notebook/ # Jupyter notebooks for analysis
 │ ├── 01_data_preparation.ipynb
 │ ├── 02_eda.ipynb
+│ ├── 03_hypothesis_testing_cleaned_version.ipynb
 │ ├── 03_hypothesis_tests.ipynb
 │ ├── 04_feature_engineering.ipynb
-│ └── 05_modeling.ipynb
+│ └── 05_ML_methods.ipynb
 │
 ├── Project Proposal.pdf
-└── README.md
+├── Project Proposal (extended version).pdf
+├── README.md
+└── requierements.txt
 ```
 ## AI Disclosure
 
