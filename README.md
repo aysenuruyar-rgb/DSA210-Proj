@@ -181,6 +181,7 @@ DSA210-Proj/
 │ ├── 04_feature_engineering.ipynb
 │ └── 05_ML_methods.ipynb
 │
+├── Final_Report.docx
 ├── Project Proposal.pdf
 ├── Project Proposal (extended version).pdf
 ├── README.md
