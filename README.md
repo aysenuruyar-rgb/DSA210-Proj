@@ -102,7 +102,7 @@ Notebook: `notebook/04_feature_engineering.ipynb`
 
 ### 5. Machine Learning Modeling
 
-A regression-based machine learning approach was applied to predict dam occupancy.
+A regression-based machine learning approach was applied to predict Istanbul dam occupancy levels using engineered temporal and weather-related features.
 
 - **Models used:**
   - Linear Regression
@@ -117,13 +117,19 @@ A regression-based machine learning approach was applied to predict dam occupanc
 - **Evaluation metrics:**
   - MAE (Mean Absolute Error)
   - R² (Coefficient of Determination)
-  
-**Results:**
 
-- Linear regression performance improved significantly after adding lag and seasonal features
-- Random Forest captured non-linear relationships between variables  
-- Temporal features (lags and seasonality) were the most important predictors  
-- Models confirm that short-term weather variables alone are insufficient  
+### Model Performance Summary
+
+| Model | Features | Performance Metric | R² |
+|---|---|---|---|
+| Linear Regression | Weather + lag + rolling + seasonal features | MAE = 2.99 | 0.955 |
+| Random Forest Regressor | All engineered features | MSE = 25.18 | 0.937 |
+
+The machine learning results demonstrate that engineered temporal features such as lagged occupancy levels and rolling averages significantly improve prediction performance.
+
+Both models achieved high R² values, indicating that historical occupancy patterns and seasonal dynamics are strong predictors of reservoir levels. The findings further support the earlier hypothesis testing results, which showed that short-term rainfall alone is insufficient to fully explain dam occupancy behavior.
+
+The feature importance analysis also revealed that lagged occupancy variables and seasonal patterns were among the strongest predictors, emphasizing the importance of long-term and cumulative environmental processes in reservoir systems.
 
 Notebook: `notebook/05_modeling.ipynb`
 
